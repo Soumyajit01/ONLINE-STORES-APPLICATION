@@ -13,13 +13,16 @@ print("To login into your account, press [2]")
 num = int(input("Your number: "))
 
 if num == 1:
+    print("YOU HAVE CHOSEN TO CREATE A NEW ACCOUNT")
     new_id = input("Enter your name: ")
     new_pwd = input("Enter your password: ")
     total_ids[new_id] = new_pwd
     with open('accounts.py', 'w') as f:
         f.write(f"accounts = {str(total_ids)}")
+    print("New account successfully created!")
 
 elif num == 2:
+    print("YOU HAVE CHOSEN TO LOGIN INTO YOUR ACCOUNT")
     login_user = input("Your name please: ")
     login_pwd = input("Your password please: ")
 
