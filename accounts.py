@@ -1,0 +1,1 @@
+accounts = {'User0': 'password for user0', 'User1': 'password for user1'}
