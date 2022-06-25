@@ -26,7 +26,7 @@ elif num == 2:
     login_user = input("Your name please: ")
     login_pwd = input("Your password please: ")
 
-    if (login_user in ids) and (login_pwd in passwords):
+    if (login_user in ids) and (login_pwd == accounts.accounts.get(login_user)):
         print("Successfully logged into ONLINE STORES!!!")
     else:
         print(" No account found or Invalid login/password")
